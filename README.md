@@ -30,3 +30,23 @@ The XSL file
     </xsl:template>
 </xsl:stylesheet>
 ```
+
+The result:
+
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<object>
+    <pair name="myArray">
+        <array>
+            <null/>
+            <boolean>true</boolean>
+            <boolean>false</boolean>
+            <string>A String</string>
+            <number>1234.1234</number>
+        </array>
+    </pair>
+    <pair name="Another pair">
+        <boolean>true</boolean>
+    </pair>
+</object>
+```
