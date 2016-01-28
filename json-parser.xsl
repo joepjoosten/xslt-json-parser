@@ -450,7 +450,7 @@
     -->
     <xsl:function name="f:hex-digit-to-integer" as="xs:integer">
         <xsl:param name="char"/>
-        <xsl:sequence select="string-length(substring-before('0123456789ABCDEF', $char))"/>
+        <xsl:sequence select="string-length(substring-before('0123456789ABCDEF', upper-case($char)))"/>
     </xsl:function>
 
 </xsl:stylesheet>
